@@ -1,0 +1,69 @@
+// Style
+@import "style.scss";
+
+// Variables
+@import "./variables";
+
+// Reset
+@import "./reset";
+
+.success {
+    background-color: var(--container-color);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        border-radius: 1.5rem;
+        background-color: var(--first-color);
+        padding: 1.2rem 2.5rem;
+        color: #fff;
+    }
+
+    &__title {
+        color: #fff;
+    }
+
+    &__goback {
+        width: max-content;
+        margin-top: $mb-0-5;
+        display: inline-block;
+        color: #fff;
+        font-size: var(--normal-font-size);
+        font-weight: $font-medium;
+
+        &:hover {
+            color: var(--first-color-lighter);
+        }
+    }
+
+    &__arrow {
+        font-size: 1.5rem;
+        margin-right: $mb-0-5;
+    }
+
+    &__socials {
+        margin-top: $mb-1-5;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 1.25rem;
+    }
+
+    &__social {
+        color: #fff;
+
+        &:hover {
+            color: var(--first-color-lighter);
+        }
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .success__text {
+        padding: 1.5rem;
+    }
+}
