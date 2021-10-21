@@ -55,38 +55,6 @@
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-// Loader
-#preloader {
-    width: 100vw;
-    height: 100vh;
-    background-color: var(--first-color);
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    z-index: $z-loader;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.preloader-loader {
-    height: 80px;
-    width: 100px;
-}
-
-.preloader-logo {
-    height: 250px;
-    width: 200px;
-}
-
-.preload-finish {
-    opacity: 0;
-    pointer-events: none;
-}
-
 /*========== Variables Dark theme ==========*/
 body.dark-theme {
     // Colors

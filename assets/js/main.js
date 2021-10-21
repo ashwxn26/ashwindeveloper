@@ -4,7 +4,7 @@ const preloader = document.querySelector("#preloader")
 window.addEventListener("load", () => {
     setInterval(() => {
         preloader.classList.add("preload-finish");
-    }, 1500);
+    }, 2000);
 })
 
 // Nav
