@@ -4,6 +4,9 @@
 // Reset
 @import "./reset";
 
+// Preloader
+@import "./preloader";
+
 // Google Font
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 
@@ -1493,6 +1496,10 @@ a {
 
     .preloader-loader {
         height: 90px;
+    }
+
+    .ldio-qjy8czzuzh {
+        transform: translateY(-10px);
     }
 
     .container {
