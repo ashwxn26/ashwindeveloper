@@ -39,8 +39,8 @@
 .preloader-logo {
   height: 250px;
   width: 200px;
-  -webkit-animation: logoRotate 1.8s ease-out infinite;
-          animation: logoRotate 1.8s ease-out infinite;
+  -webkit-animation: logoRotate 1.8s 0.1s ease-out infinite;
+          animation: logoRotate 1.8s 0.1s ease-out infinite;
 }
 
 @-webkit-keyframes logoRotate {
@@ -1546,9 +1546,6 @@ a {
   }
   .preloader-logo {
     width: 250px;
-  }
-  .preloader-loader {
-    height: 90px;
   }
   .ldio-qjy8czzuzh {
     -webkit-transform: translateY(-10px);
