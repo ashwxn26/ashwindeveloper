@@ -22,11 +22,29 @@
 .preloader-logo {
     height: 250px;
     width: 200px;
-    animation: logoRotate 2s ease-out infinite;
+    animation: logoRotate 1.8s ease-out infinite;
 }
 
 @keyframes logoRotate {
     to {
         transform: rotateY(360deg);
+    }
+}
+
+.preloader-fade {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #e05757;
+    z-index: 1001;
+    animation: preloaderFade 2s 2s cubic-bezier(0.57, -0.06, 0.35, 1.82)
+        forwards;
+}
+
+@keyframes preloaderFade {
+    to {
+        height: 0;
     }
 }
