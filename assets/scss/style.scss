@@ -1079,14 +1079,14 @@ a {
     &__copy {
         font-size: var(--smaller-font-size);
         text-align: center;
-        color: var(--text-color-light);
         margin-top: $mb-3;
     }
 
     &__title,
     &__subtitle,
     &__link,
-    &__social {
+    &__social,
+    &__copy {
         color: #fff;
     }
 }

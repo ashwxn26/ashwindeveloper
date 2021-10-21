@@ -1305,11 +1305,10 @@ a {
 .footer__copy {
   font-size: var(--smaller-font-size);
   text-align: center;
-  color: var(--text-color-light);
   margin-top: 3rem;
 }
 
-.footer__title, .footer__subtitle, .footer__link, .footer__social {
+.footer__title, .footer__subtitle, .footer__link, .footer__social, .footer__copy {
   color: #fff;
 }
 
