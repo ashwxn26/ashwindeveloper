@@ -91,7 +91,7 @@ if(portfolioClose){
 // Portfolio Swpier
 let swiperPortfolio = new Swiper('.portfolio__container', {
   cssMode: true,
-  loop: true,
+//   loop: true,
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
