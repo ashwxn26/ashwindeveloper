@@ -38,11 +38,11 @@
 
 .preloader-logo {
   width: 200px;
-  animation: logoRotate 1.8s 0.1s ease-out infinite;
-  -webkit-animation: logoRotate 1.8s 0.1s ease-out infinite;
-  -ms-animation: logoRotate 1.8s 0.1s ease-out infinite;
-  -moz-animation: logoRotate 1.8s 0.1s ease-out infinite;
-  -o-animation: logoRotate 1.8s 0.1s ease-out infinite;
+  animation: logoRotate 2s 0.1s ease-out infinite;
+  -webkit-animation: logoRotate 2s 0.1s ease-out infinite;
+  -ms-animation: logoRotate 2s 0.1s ease-out infinite;
+  -moz-animation: logoRotate 2s 0.1s ease-out infinite;
+  -o-animation: logoRotate 2s 0.1s ease-out infinite;
 }
 
 @-webkit-keyframes logoRotate {
