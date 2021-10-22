@@ -21,11 +21,12 @@
     --smaller-font-size: 0.75rem;
 
     // Change Color
-    --color: 0;
+    --color: 216;
 
     // Colors
+    --first-color: hsl(var(--color), 100%, 60%);
+    // --first-color: hsl(var(--color), 69%, 61%);
     --first-color-second: hsl(var(--color), 69%, 61%);
-    --first-color: hsl(var(--color), 69%, 61%);
     --first-color-alt: hsl(var(--color), 57%, 53%);
     --first-color-lighter: hsl(var(--color), 92%, 85%);
     --title-color: hsl(var(--color), 8%, 15%);

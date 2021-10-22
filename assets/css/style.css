@@ -71,7 +71,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #e05757;
+  background-color: #3385ff;
   z-index: 1001;
   -webkit-animation: preloaderFade 2s 2s cubic-bezier(0.57, -0.06, 0.35, 1.82) forwards;
           animation: preloaderFade 2s 2s cubic-bezier(0.57, -0.06, 0.35, 1.82) forwards;
@@ -102,9 +102,9 @@
   --normal-font-size: 0.938rem;
   --small-font-size: 0.813rem;
   --smaller-font-size: 0.75rem;
-  --color: 0;
+  --color: 216;
+  --first-color: hsl(var(--color), 100%, 60%);
   --first-color-second: hsl(var(--color), 69%, 61%);
-  --first-color: hsl(var(--color), 69%, 61%);
   --first-color-alt: hsl(var(--color), 57%, 53%);
   --first-color-lighter: hsl(var(--color), 92%, 85%);
   --title-color: hsl(var(--color), 8%, 15%);
