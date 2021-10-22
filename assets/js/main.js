@@ -4,6 +4,7 @@ const preloader = document.querySelector("#preloader")
 window.addEventListener("load", () => {
     setInterval(() => {
         preloader.classList.add("preload-finish");
+        document.querySelector("body").classList.remove("preloader-overflow-hidden");
     }, 2000);
 })
 
