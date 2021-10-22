@@ -303,19 +303,13 @@ a {
     }
 
     &__scroll {
-        grid-column: 1/3;
+        display: flex;
+        justify-content: center;
 
         &-button {
             color: var(--first-color);
+            animation: scrollDown 1s ease infinite;
             transition: 0.3s;
-
-            &:hover {
-                transform: translateY(0.25rem);
-            }
-        }
-
-        &-mouse {
-            font-size: 2rem;
         }
 
         &-name {
@@ -326,7 +320,16 @@ a {
         }
 
         &-arrow {
-            font-size: 1.25rem;
+            font-size: 4rem;
+        }
+
+        @keyframes scrollDown {
+            50% {
+                transform: translateY(0.5rem);
+            }
+            100% {
+                transform: translateY(0);
+            }
         }
     }
 }
@@ -1290,10 +1293,6 @@ a {
 
     .home__blob {
         width: 270px;
-    }
-
-    .home__scroll {
-        display: block;
     }
 
     .home__scroll-button {
