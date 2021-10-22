@@ -42,6 +42,8 @@
   animation: logoRotate 1.8s 0.1s ease-out infinite;
   -webkit-animation: logoRotate 1.8s 0.1s ease-out infinite;
   -ms-animation: logoRotate 1.8s 0.1s ease-out infinite;
+  -moz-animation: logoRotate 1.8s 0.1s ease-out infinite;
+  -o-animation: logoRotate 1.8s 0.1s ease-out infinite;
 }
 
 @-webkit-keyframes logoRotate {
@@ -49,6 +51,8 @@
     transform: rotateY(360deg);
     -webkit-transform: rotateY(360deg);
     -ms-transform: rotateY(360deg);
+    -moz-transform: rotateY(360deg);
+    -o-transform: rotateY(360deg);
   }
 }
 
@@ -57,6 +61,8 @@
     transform: rotateY(360deg);
     -webkit-transform: rotateY(360deg);
     -ms-transform: rotateY(360deg);
+    -moz-transform: rotateY(360deg);
+    -o-transform: rotateY(360deg);
   }
 }
 
