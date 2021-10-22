@@ -39,8 +39,9 @@
 .preloader-logo {
   height: 250px;
   width: 200px;
+  animation: logoRotate 1.8s 0.1s ease-out infinite;
   -webkit-animation: logoRotate 1.8s 0.1s ease-out infinite;
-          animation: logoRotate 1.8s 0.1s ease-out infinite;
+  -ms-animation: logoRotate 1.8s 0.1s ease-out infinite;
 }
 
 @-webkit-keyframes logoRotate {
