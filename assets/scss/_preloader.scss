@@ -28,6 +28,8 @@
 @keyframes logoRotate {
     to {
         transform: rotateY(360deg);
+        -webkit-transform: rotateX(360deg);
+        -ms-transform: rotateX(360deg);
     }
 }
 

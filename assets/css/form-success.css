@@ -45,15 +45,17 @@
 
 @-webkit-keyframes logoRotate {
   to {
-    -webkit-transform: rotateY(360deg);
-            transform: rotateY(360deg);
+    transform: rotateY(360deg);
+    -webkit-transform: rotateX(360deg);
+    -ms-transform: rotateX(360deg);
   }
 }
 
 @keyframes logoRotate {
   to {
-    -webkit-transform: rotateY(360deg);
-            transform: rotateY(360deg);
+    transform: rotateY(360deg);
+    -webkit-transform: rotateX(360deg);
+    -ms-transform: rotateX(360deg);
   }
 }
 
