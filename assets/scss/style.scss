@@ -66,6 +66,16 @@ body.dark-theme {
     --container-color: hsl(var(--color), 29%, 16%);
 }
 
+.glass {
+    background: linear-gradient(
+        135deg,
+        rgba(255, 255, 255, 0.1),
+        rgba(255, 255, 255, 0)
+    );
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
 /*========== Button Dark/Light ==========*/
 .nav__btns {
     display: flex;
@@ -873,8 +883,14 @@ a {
     text-align: center;
 
     &__bg {
-        background-color: var(--first-color);
         padding-top: 3rem;
+        background: linear-gradient(
+            135deg,
+            rgba(255, 255, 255, 0.1),
+            rgba(255, 255, 255, 0)
+        );
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
     }
 
     &__title {
