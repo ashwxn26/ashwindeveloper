@@ -43,7 +43,10 @@
 }
 
 @keyframes preloaderOpacity {
-    to {
+    50% {
+        opacity: 1;
+    }
+    100% {
         opacity: 0;
         visibility: hidden;
     }
