@@ -1004,6 +1004,8 @@ a {
   background-color: rgba(0, 0, 0, 0.4);
   opacity: 0;
   visibility: hidden;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .portfolio__modal-content {

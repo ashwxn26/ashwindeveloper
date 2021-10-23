@@ -75,6 +75,14 @@ modalCloses.forEach((modalClose) => {
     })
 })
 
+modalViews.forEach((modalView) => {
+    modalView.addEventListener("click", () => {
+        modalViews.forEach((modalView) => {   
+            modalView.classList.remove("active-modal")
+        })
+    })
+})
+
 // Portfolio Modal
 const portfolioBtn = document.querySelector(".portfolio__modal-btn"),
     portfolioClose = document.querySelector(".portfolio__modal-close"),
@@ -82,11 +90,19 @@ const portfolioBtn = document.querySelector(".portfolio__modal-btn"),
     mainPortfolio = document.querySelector("main");
 
 if(portfolioBtn){
-    portfolioBtn.addEventListener("click", () => {portfolioModal.classList.add("portfolio-active-modal")})
+    portfolioBtn.addEventListener("click", () => {
+        portfolioModal.classList.add("portfolio-active-modal")})
 }
 
 if(portfolioClose){
-    portfolioClose.addEventListener("click", () => {portfolioModal.classList.remove("portfolio-active-modal")})
+    portfolioClose.addEventListener("click", () => {
+        portfolioModal.classList.remove("portfolio-active-modal")})
+}
+
+if(portfolioModal){
+    portfolioModal.addEventListener("click", () => {
+        portfolioModal.classList.remove("portfolio-active-modal")
+    })
 }
 
 // Portfolio Swpier

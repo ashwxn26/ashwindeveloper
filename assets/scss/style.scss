@@ -852,6 +852,7 @@ a {
         background-color: rgba(0, 0, 0, 0.4);
         opacity: 0;
         visibility: hidden;
+        transition: 0.3s;
 
         &-content {
             position: relative;
