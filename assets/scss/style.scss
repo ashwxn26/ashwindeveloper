@@ -1122,6 +1122,18 @@ a {
     }
 }
 
+@supports (scrollbar-color: var(--scroll-bar-color) var(--scroll-thumb-color)) {
+    * {
+        scrollbar-color: var(--scroll-thumb-color) var(--scroll-bar-color);
+    }
+}
+
+@supports (scrollbar-width: thin) {
+    * {
+        scrollbar-width: thin;
+    }
+}
+
 // Media Query
 // Small Devices
 @media screen and (max-width: 350px) {

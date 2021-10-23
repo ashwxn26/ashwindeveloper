@@ -1263,6 +1263,18 @@ a {
   background-color: var(--text-color-light);
 }
 
+@supports (scrollbar-color: var(--scroll-bar-color) var(--scroll-thumb-color)) {
+  * {
+    scrollbar-color: var(--scroll-thumb-color) var(--scroll-bar-color);
+  }
+}
+
+@supports (scrollbar-width: thin) {
+  * {
+    scrollbar-width: thin;
+  }
+}
+
 @media screen and (max-width: 350px) {
   .container {
     margin-left: 1rem;

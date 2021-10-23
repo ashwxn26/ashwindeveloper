@@ -152,6 +152,12 @@ body.dark-theme {
   --container-color: hsl(var(--color), 29%, 16%);
 }
 
+.glass {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
 /*========== Button Dark/Light ==========*/
 .nav__btns {
   display: -webkit-box;
@@ -998,6 +1004,8 @@ a {
   background-color: rgba(0, 0, 0, 0.4);
   opacity: 0;
   visibility: hidden;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .portfolio__modal-content {
@@ -1028,8 +1036,10 @@ a {
 }
 
 .project__bg {
-  background-color: var(--first-color);
   padding-top: 3rem;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 
 .project__title {
