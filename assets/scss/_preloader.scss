@@ -21,24 +21,12 @@
 
 .preloader-logo {
     width: 200px;
-    // animation: logoRotate 2s 0.1s ease-out infinite;
-    // -webkit-animation: logoRotate 2s 0.1s ease-out infinite;
-    // -ms-animation: logoRotate 2s 0.1s ease-out infinite;
-    // -moz-animation: logoRotate 2s 0.1s ease-out infinite;
-    // -o-animation: logoRotate 2s 0.1s ease-out infinite;
 }
 
-// @keyframes logoRotate {
-//     to {
-//         transform: rotateY(360deg);
-//         -webkit-transform: rotateY(360deg);
-//         -ms-transform: rotateY(360deg);
-//         -moz-transform: rotateY(360deg);
-//         -o-transform: rotateY(360deg);
-//     }
-// }
-
 .preloader-fade {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: fixed;
     bottom: 0;
     left: 0;
@@ -48,6 +36,17 @@
     z-index: 1001;
     animation: preloaderFade 2s 2s cubic-bezier(0.57, -0.06, 0.35, 1.82)
         forwards;
+}
+
+.preloader-fade .preloader-logo {
+    animation: preloaderOpacity 1s 2s forwards;
+}
+
+@keyframes preloaderOpacity {
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
 }
 
 @keyframes preloaderFade {

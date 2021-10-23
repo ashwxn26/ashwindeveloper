@@ -41,6 +41,15 @@
 }
 
 .preloader-fade {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: fixed;
   bottom: 0;
   left: 0;
@@ -50,6 +59,25 @@
   z-index: 1001;
   -webkit-animation: preloaderFade 2s 2s cubic-bezier(0.57, -0.06, 0.35, 1.82) forwards;
           animation: preloaderFade 2s 2s cubic-bezier(0.57, -0.06, 0.35, 1.82) forwards;
+}
+
+.preloader-fade .preloader-logo {
+  -webkit-animation: preloaderOpacity 1s 2s forwards;
+          animation: preloaderOpacity 1s 2s forwards;
+}
+
+@-webkit-keyframes preloaderOpacity {
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes preloaderOpacity {
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
 }
 
 @-webkit-keyframes preloaderFade {
