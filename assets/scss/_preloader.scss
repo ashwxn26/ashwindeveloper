@@ -38,6 +38,12 @@
     }
 }
 
+@supports (-webkit-touch-callout: none) {
+    .preloader-logo {
+        animation: none;
+    }
+}
+
 .preloader-fade {
     display: flex;
     justify-content: center;

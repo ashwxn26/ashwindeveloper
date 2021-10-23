@@ -65,6 +65,13 @@
   }
 }
 
+@supports (-webkit-touch-callout: none) {
+  .preloader-logo {
+    -webkit-animation: none;
+            animation: none;
+  }
+}
+
 .preloader-fade {
   display: -webkit-box;
   display: -ms-flexbox;
