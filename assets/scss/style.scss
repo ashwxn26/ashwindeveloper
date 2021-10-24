@@ -789,17 +789,22 @@ a {
 }
 
 // Sumbit Button
-.sumbit-button {
-    display: inline-block;
+.submit-button {
+    display: inline-flex;
+    align-items: center;
     background-color: var(--first-color);
     color: #fff;
     padding: 1rem;
     border-radius: 0.5rem;
     border-color: var(--first-color);
-    font-weight: $font-medium;
 
     &:hover {
         background-color: var(--first-color-alt);
+    }
+
+    &-text {
+        font-family: $body-font;
+        font-weight: $font-medium;
     }
 }
 

@@ -1069,9 +1069,7 @@ a {
 
 .project__bg {
   padding-top: 3rem;
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  background-color: var(--first-color);
 }
 
 .project__title {
