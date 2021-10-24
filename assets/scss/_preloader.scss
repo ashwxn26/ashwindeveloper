@@ -21,27 +21,6 @@
 
 .preloader-logo {
     width: 200px;
-    animation: logoAnimation 2s infinite;
-    -webkit-animation: logoAnimation 2s infinite;
-    -ms-animation: logoAnimation 2s infinite;
-    -moz-animation: logoAnimation 2s infinite;
-    -o-animation: logoAnimation 2s infinite;
-
-    @keyframes logoAnimation {
-        to {
-            transform: rotateY(360deg);
-            -webkit-transform: rotateY(360deg);
-            -ms-transform: rotateY(360deg);
-            -moz-transform: rotateY(360deg);
-            -o-transform: rotateY(360deg);
-        }
-    }
-}
-
-@supports (-webkit-touch-callout: none) {
-    .preloader-logo {
-        animation: none;
-    }
 }
 
 .preloader-fade {

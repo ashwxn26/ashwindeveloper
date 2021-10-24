@@ -38,38 +38,6 @@
 
 .preloader-logo {
   width: 200px;
-  animation: logoAnimation 2s infinite;
-  -webkit-animation: logoAnimation 2s infinite;
-  -ms-animation: logoAnimation 2s infinite;
-  -moz-animation: logoAnimation 2s infinite;
-  -o-animation: logoAnimation 2s infinite;
-}
-
-@-webkit-keyframes logoAnimation {
-  to {
-    transform: rotateY(360deg);
-    -webkit-transform: rotateY(360deg);
-    -ms-transform: rotateY(360deg);
-    -moz-transform: rotateY(360deg);
-    -o-transform: rotateY(360deg);
-  }
-}
-
-@keyframes logoAnimation {
-  to {
-    transform: rotateY(360deg);
-    -webkit-transform: rotateY(360deg);
-    -ms-transform: rotateY(360deg);
-    -moz-transform: rotateY(360deg);
-    -o-transform: rotateY(360deg);
-  }
-}
-
-@supports (-webkit-touch-callout: none) {
-  .preloader-logo {
-    -webkit-animation: none;
-            animation: none;
-  }
 }
 
 .preloader-fade {
@@ -968,18 +936,27 @@ a {
   margin-right: 0.25rem;
 }
 
-.sumbit-button {
-  display: inline-block;
+.submit-button {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: var(--first-color);
   color: #fff;
   padding: 1rem;
   border-radius: 0.5rem;
   border-color: var(--first-color);
-  font-weight: 500;
 }
 
-.sumbit-button:hover {
+.submit-button:hover {
   background-color: var(--first-color-alt);
+}
+
+.submit-button-text {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
 }
 
 .active-modal {
